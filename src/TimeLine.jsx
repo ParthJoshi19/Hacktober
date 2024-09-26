@@ -4,14 +4,14 @@ const TimeLine = () => {
   const containersRef = useRef([]); 
   const arr = [
     {
-      heading: "Heading 1",
+      heading: "Heading ",
       date: "01/01/2024",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, perspiciatis molestias corrupti asperiores minus aliquam dolorem odit a."
     },
     {
       heading: "Heading 2",
       date: "02/02/2024",
-      des: "Another description for this heading, detailing further information."
+      des: `Assumenda dolor quibusdam ullam dolorum sunt? Nulla quaerat excepturi doloribus provident.`
     },
     {
       heading: "Heading 3",
@@ -69,11 +69,12 @@ const TimeLine = () => {
           style={{ animationDelay: `${index * 2}s` }}
           key={index}
         >
-          <img src="hacktoberfestbanner.webp" className={`img ${index % 2 !== 0 ? 'left-[-18px]' : ''}`} alt="banner" />
-          <div className="text-box relative w-[33vw] h-[40vh] py-[20px] px-[30px] rounded-lg bg-[#1f3829] text-white">
-            <h3 className="font-bold">{item.heading}</h3>
-            <small>{item.date}</small>
-            <p>{item.des}</p>
+          <img src="images.jpeg" className={`img ${index % 2 !== 0 ? 'left-[-18px]' : ''}`} alt="banner" />
+          <div className="text-box relative w-[33vw] h-[40vh] py-[20px] text-wrap px-[30px] rounded-lg bg-[#1f3829] text-white">
+            <h3 className="font-bold m-2">{item.heading}</h3>
+            <small className='m-2'>{item.date}</small>
+            <div className='w-full bg-green-500 h-[2px] m-2'></div>
+            <p className='m-2'>{item.des}</p>
             <span className={`${index % 2 === 0 ? 'right-arrow' : 'left-arrow'} absolute top-[28px] ${index % 2 === 0 ? 'right-[-15px] border-l-[15px]' : 'left-[-15px] border-r-[15px]'} z-[1] w-0 h-0 border-t-[15px] border-b-[15px] border-t-transparent border-b-transparent border-l-[#00FF00] border-r-[#00FF00]`}></span>
           </div>
         </div>
