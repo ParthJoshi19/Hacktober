@@ -21,7 +21,7 @@ const TimeLine = () => {
     {
       heading: "Heading 4",
       date: "04/04/2024",
-      des: "Additional details for the event, providing insight into the information."
+      des: `voluptatibus, rem vel! Incidunt aspernatur est ducimus molestiae, quod quia sapiente?`
     },
     {
       heading: "Heading 5",
@@ -69,8 +69,8 @@ const TimeLine = () => {
           style={{ animationDelay: `${index * 2}s` }}
           key={index}
         >
-          <img src="images.jpeg" className={`img ${index % 2 !== 0 ? 'left-[-18px]' : ''}`} alt="banner" />
-          <div className="text-box relative w-[33vw] h-[40vh] py-[20px] text-wrap px-[30px] rounded-lg bg-[#1f3829] text-white">
+          <img src="images.jpeg" className={`img ${index % 2 !== 0 ? 'left-img' : 'right-img'}`} alt="banner" />
+          <div className={` ${index % 2 === 0 ? 'left-container ' : 'right-container'} text-box relative h-[45vh] py-[20px] text-wrap px-[30px] m-0 rounded-lg bg-[#1f3829] text-white`}>
             <h3 className="font-bold m-2">{item.heading}</h3>
             <small className='m-2'>{item.date}</small>
             <div className='w-full bg-green-500 h-[2px] m-2'></div>
