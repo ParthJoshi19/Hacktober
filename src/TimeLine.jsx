@@ -5,7 +5,10 @@ const TimeLine = () => {
   const arr = [
     {
       heading: "Heading 1",
+<<<<<<< HEAD
       heading: "Heading ",
+=======
+>>>>>>> 912342f841c6dd28dc1e3b0ea3736010194f5df7
       date: "01/01/2024",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, perspiciatis molestias corrupti asperiores minus aliquam dolorem odit a."
     },
