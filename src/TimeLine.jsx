@@ -5,6 +5,7 @@ const TimeLine = () => {
   const arr = [
     {
       heading: "Heading 1",
+      heading: "Heading ",
       date: "01/01/2024",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, perspiciatis molestias corrupti asperiores minus aliquam dolorem odit a."
     },
