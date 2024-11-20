@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,19 +37,11 @@ body{
         transform: translateY(30px);
     }
 }
-
+/* 00ff85 */
 .timeline::after {
     left: 50%;
     animation: moveline 6s linear forwards;
 }
-/* .text-box{
-    min-height: 40vh;
-    max-width: 100%;
-    padding: 1.5em;
-    word-wrap: break-word;
-    overflow-wrap:break-word ;
-    overflow-y:scroll;
-} */
 
 .left-img{
     margin-left: -2px;
@@ -60,6 +50,29 @@ body{
 .right-img{
     right:-18px;
 }
+
+/* General styles for the text-box */
+.text-box {
+    position: relative;
+    background-color: rgba(39, 49, 41, 0.701); /* Dark green with opacity */
+    box-shadow: 1px 3px 10px rgb(28, 255, 62); /* Greenish glow shadow */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    perspective: 1000px; /* For 3D transform perspective */
+    overflow: auto; /* Ensures shine effect stays within bounds */
+  }
+  
+  
+
+
+.text-box{
+    background-color: rgba(39, 49, 41, 0.701);
+}
+
+  /*heading- space-mono
+  text-robot-mono
+  */
 
 .img {
     /* left:-20px; */
@@ -71,7 +84,7 @@ body{
     /* right: -23px; */
     top: 32px;
     z-index: 10;
-    border: 6px solid #00FF00;
+    border: 3px solid #00FF00;
 }
 
 .text-box {
@@ -117,4 +130,3 @@ body{
         left: -15px;
     }
 }
->>>>>>> 2ea9d8ec230d50d781b4d8284de7830a4e167451
